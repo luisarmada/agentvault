@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agent.css"></link>
+
+    <!-- flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="carousel" data-flickity='{ "wrapAround": true }'>
+
+        <div class="agentscreen" id="jett" onmousemove="Parallax(event)">
+            <h1 class="agentname">JETT</h1>
+            <img class = "agentimg" src="images/jett.png"></img>
+            <h1 class="agent_fullname">Han Sunwoo</h1>
+            <h1 class="agentdescription">Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. 
+                She runs circles around every skirmish, cutting enemies before they even know what hit them.</h1>
+    
+            <div class="agentselect">
+                <img draggable ="false" src ="images/jett_Cloudburst.png"></img>
+                <img draggable ="false" src="images/jett_Updraft.png"></img>
+                <img draggable ="false" src="images/jett_Tailwind.png"></img>
+                <img draggable ="false" src="images/jett_Bladestorm.png"></img>
+            </div>
+        </div>
+
+        <div class="agentscreen" id="phoenix" onmousemove="Parallax(event)">
+            <h1 class="agentname">PHOENIX</h1>
+            <img class = "agentimg" src="images/phoenix.png"></img>
+            <h1 class="agent_fullname" yoffset="-500px">Jamie Adeyemi</h1>
+            <h1 class="agentdescription">A UK radiant of fire whose pride comes with ease, Phoenix throws himself into the fray turning the battlefield into his personal playground.</h1>
+    
+            <div class="agentselect">
+                <img draggable ="false" src ="images/jett_Cloudburst.png"></img>
+                <img draggable ="false" src="images/jett_Updraft.png"></img>
+                <img draggable ="false" src="images/jett_Tailwind.png"></img>
+                <img draggable ="false" src="images/jett_Bladestorm.png"></img>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+</body>
+</html>

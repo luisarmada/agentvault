@@ -1,0 +1,53 @@
+
+body{
+    background: rgb(119,212,228);
+    background: radial-gradient(circle, rgba(119,212,228,1) 0%, rgba(67,86,128,1) 100%);
+    margin: 0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "Tungsten-Bold";
+    src: url('fonts/Tungsten-Bold.ttf');
+}
+
+#agentname{
+    font-family: 'Tungsten-Bold';
+    color: #e9f4f7;
+    opacity: 0.4;
+    font-size: 100vh;
+    user-select: none;
+
+    text-align: center;
+    vertical-align: middle;
+
+    transform: translate(0%, -60%);
+}
+
+.agentdescription {
+    color: #e9f4f7;
+    text-align: center;
+    vertical-align: middle;
+
+    transform: translate(0%, -60%);
+}
+
+#agentimg{
+    position: absolute;
+    margin: auto;
+    width: auto;
+    height: 82%;
+    text-align:center;
+    pointer-events: none;
+    align-self: end;
+
+    left:50%;
+    transform: translate(-60%, 0%);
+}
+
+#container{
+    display: grid;
+    position: relative;
+    width: auto;
+    height: 100vh;
+}
