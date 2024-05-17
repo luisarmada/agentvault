@@ -5,44 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="agent.css"></link>
 
-    <!-- flickity -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- imported -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"></link>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/transition-style"></link>
+    
+
     <script src="main.js"></script>
-    <title>Document</title>
+    <title>AGENT VAULT</title>
+    <link rel="icon" href="images/valorant-logo.png"/>
 </head>
 <body>
-    <div id="carousel" data-flickity='{ "wrapAround": true }'>
+    <!--<div transition-style="in:wipe:up" class="transitionscreen">
+    </div>-->
 
+    <div id="carousel" data-flickity='{ "wrapAround": true }'>
         <div class="agentscreen" id="jett" onmousemove="Parallax(event)">
-            <h1 class="agentname">JETT</h1>
-            <img class = "agentimg" src="images/jett.png"></img>
-            <h1 class="agent_fullname">Han Sunwoo</h1>
+            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
+            <div class="role_navbar">
+                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
+                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
+                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
+                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
+            </div>
+            <h1 class="agentname" style="--desiredfontsize: 100vh">JETT</h1>
+            <img class = "agentimg" src="images/jett/jett.png"></img>
+            <h1 class="agent_fullname" id = "test">Han Sunwoo</h1>
             <h1 class="agentdescription">Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. 
                 She runs circles around every skirmish, cutting enemies before they even know what hit them.</h1>
     
             <div class="agentselect">
-                <img draggable ="false" src ="images/jett_Cloudburst.png"></img>
-                <img draggable ="false" src="images/jett_Updraft.png"></img>
-                <img draggable ="false" src="images/jett_Tailwind.png"></img>
-                <img draggable ="false" src="images/jett_Bladestorm.png"></img>
+                <img draggable ="false" src ="images/jett/jett_Cloudburst.png"></img>
+                <img draggable ="false" src="images/jett/jett_Updraft.png"></img>
+                <img draggable ="false" src="images/jett/jett_Tailwind.png"></img>
+                <img draggable ="false" src="images/jett/jett_Bladestorm.png"></img>
             </div>
         </div>
 
         <div class="agentscreen" id="phoenix" onmousemove="Parallax(event)">
-            <h1 class="agentname">PHOENIX</h1>
-            <img class = "agentimg" src="images/phoenix.png"></img>
-            <h1 class="agent_fullname" yoffset="-500px">Jamie Adeyemi</h1>
+            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
+            <div class="role_navbar">
+                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
+                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
+                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
+                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
+            </div>
+            <h1 class="agentname" style="--desiredfontsize: 65vh">PHOENIX</h1>
+            <img class = "agentimg" src="images/phoenix/phoenix.png"></img>
+            <h1 class="agent_fullname"">Jamie Adeyemi</h1>
             <h1 class="agentdescription">A UK radiant of fire whose pride comes with ease, Phoenix throws himself into the fray turning the battlefield into his personal playground.</h1>
     
             <div class="agentselect">
-                <img draggable ="false" src ="images/jett_Cloudburst.png"></img>
-                <img draggable ="false" src="images/jett_Updraft.png"></img>
-                <img draggable ="false" src="images/jett_Tailwind.png"></img>
-                <img draggable ="false" src="images/jett_Bladestorm.png"></img>
+                <img draggable ="false" src ="images/phoenix/phoenix_Blaze.png"></img>
+                <img draggable ="false" src="images/phoenix/phoenix_Curveball.png"></img>
+                <img draggable ="false" src="images/phoenix/phoenix_Hot_Hands.png"></img>
+                <img draggable ="false" src="images/phoenix/phoenix_Run_it_Back.png"></img>
             </div>
         </div>
+
+        <div class="agentscreen" id="raze" onmousemove="Parallax(event)">
+            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
+            <div class="role_navbar">
+                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
+                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
+                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
+                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
+            </div>
+            <h1 class="agentname" style="--desiredfontsize: 95vh">RAZE</h1>
+            <img class = "agentimg" src="images/raze/raze.png"></img>
+            <h1 class="agent_fullname"">Tayane Alves</h1>
+            <h1 class="agentdescription">Raze has a personality reflecting her explosive and colorful playstyle, bringing happiness and positivity to the team. She often cracks bad jokes and lifts the team's spirit, all while obliterating the enemy with her kit.</h1>
+    
+            <div class="agentselect">
+                <img draggable ="false" src ="images/raze/Boom_Bot.webp"></img>
+                <img draggable ="false" src="images/raze/Blast_Pack.webp"></img>
+                <img draggable ="false" src="images/raze/Paint_Shells.webp"></img>
+                <img draggable ="false" src="images/raze/Showstopper.webp"></img>
+            </div>
+        </div>
+
+        <div class="agentscreen" id="reyna" onmousemove="Parallax(event)">
+            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
+            <div class="role_navbar">
+                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
+                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
+                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
+                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
+            </div>
+            <h1 class="agentname" style="--desiredfontsize: 80vh">REYNA</h1>
+            <img class = "agentimg" src="images/reyna/reyna.png"></img>
+            <h1 class="agent_fullname"">Zyanya Mondragón</h1>
+            <h1 class="agentdescription">Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.</h1>
+    
+            <div class="agentselect">
+                <img draggable ="false" src ="images/reyna/Leer.webp"></img>
+                <img draggable ="false" src="images/reyna/Devour.webp"></img>
+                <img draggable ="false" src="images/reyna/Dismiss.webp"></img>
+                <img draggable ="false" src="images/reyna/Empress.webp"></img>
+            </div>
+        </div>
+
+        <div class="agentscreen" id="yoru" onmousemove="Parallax(event)">
+            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
+            <div class="role_navbar">
+                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
+                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
+                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
+                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
+            </div>
+            <h1 class="agentname" style="--desiredfontsize: 90vh">YORU</h1>
+            <img class = "agentimg" src="images/yoru/yoru.png"></img>
+            <h1 class="agent_fullname">Kiritani Ryo</h1>
+            <h1 class="agentdescription">Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. 
+                She runs circles around every skirmish, cutting enemies before they even know what hit them.</h1>
+    
+            <div class="agentselect">
+                <img draggable ="false" src ="images/jett/jett_Cloudburst.png"></img>
+                <img draggable ="false" src="images/jett/jett_Updraft.png"></img>
+                <img draggable ="false" src="images/jett/jett_Tailwind.png"></img>
+                <img draggable ="false" src="images/jett/jett_Bladestorm.png"></img>
+            </div>
+        </div>
+
+        <div class="agentscreen" id="neon" onmousemove="Parallax(event)">
+            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
+            <div class="role_navbar">
+                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
+                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
+                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
+                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
+            </div>
+            <h1 class="agentname" style="--desiredfontsize: 90vh">NEON</h1>
+            <img class = "agentimg" src="images/neon/neon.webp"></img>
+            <h1 class="agent_fullname" id = "test">Han Sunwoo</h1>
+            <h1 class="agentdescription">Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. 
+                She runs circles around every skirmish, cutting enemies before they even know what hit them.</h1>
+    
+            <div class="agentselect">
+                <img draggable ="false" src ="images/jett/jett_Cloudburst.png"></img>
+                <img draggable ="false" src="images/jett/jett_Updraft.png"></img>
+                <img draggable ="false" src="images/jett/jett_Tailwind.png"></img>
+                <img draggable ="false" src="images/jett/jett_Bladestorm.png"></img>
+            </div>
+        </div>
+
+        <div class="agentscreen" id="iso" onmousemove="Parallax(event)">
+            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
+            <div class="role_navbar">
+                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
+                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
+                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
+                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
+            </div>
+            <h1 class="agentname" style="--desiredfontsize: 90vh">ISO</h1>
+            <img class = "agentimg" src="images/iso/iso.png"></img>
+            <h1 class="agent_fullname" id = "test">Han Sunwoo</h1>
+            <h1 class="agentdescription">Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. 
+                She runs circles around every skirmish, cutting enemies before they even know what hit them.</h1>
+    
+            <div class="agentselect">
+                <img draggable ="false" src ="images/jett/jett_Cloudburst.png"></img>
+                <img draggable ="false" src="images/jett/jett_Updraft.png"></img>
+                <img draggable ="false" src="images/jett/jett_Tailwind.png"></img>
+                <img draggable ="false" src="images/jett/jett_Bladestorm.png"></img>
+            </div>
+        </div>
+
     </div>
     
 
