@@ -8,174 +8,143 @@
     <!-- imported -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"></link>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
     <link rel="stylesheet" href="https://unpkg.com/transition-style"></link>
     
-
     <script src="main.js"></script>
     <title>AGENT VAULT</title>
     <link rel="icon" href="images/valorant-logo.png"/>
 </head>
 <body>
-    <!--<div transition-style="in:wipe:up" class="transitionscreen">
-    </div>-->
+    <!--
+    <div transition-style="in:wipe:up" class="transitionscreen">
+        <character id="Viper" ></character>
+    </div>
+    -->
 
     <div id="carousel" data-flickity='{ "wrapAround": true }'>
-        <div class="agentscreen" id="jett" onmousemove="Parallax(event)">
-            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
-            <div class="role_navbar">
-                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
-                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
-                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
-                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
-            </div>
-            <h1 class="agentname" style="--desiredfontsize: 100vh">JETT</h1>
-            <img class = "agentimg" src="images/jett/jett.png"></img>
-            <h1 class="agent_fullname" id = "test">Han Sunwoo</h1>
-            <h1 class="agentdescription">Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. 
-                She runs circles around every skirmish, cutting enemies before they even know what hit them.</h1>
-    
-            <div class="agentselect">
-                <img draggable ="false" src ="images/jett/jett_Cloudburst.png"></img>
-                <img draggable ="false" src="images/jett/jett_Updraft.png"></img>
-                <img draggable ="false" src="images/jett/jett_Tailwind.png"></img>
-                <img draggable ="false" src="images/jett/jett_Bladestorm.png"></img>
-            </div>
-        </div>
-
-        <div class="agentscreen" id="phoenix" onmousemove="Parallax(event)">
-            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
-            <div class="role_navbar">
-                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
-                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
-                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
-                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
-            </div>
-            <h1 class="agentname" style="--desiredfontsize: 65vh">PHOENIX</h1>
-            <img class = "agentimg" src="images/phoenix/phoenix.png"></img>
-            <h1 class="agent_fullname"">Jamie Adeyemi</h1>
-            <h1 class="agentdescription">A UK radiant of fire whose pride comes with ease, Phoenix throws himself into the fray turning the battlefield into his personal playground.</h1>
-    
-            <div class="agentselect">
-                <img draggable ="false" src ="images/phoenix/phoenix_Blaze.png"></img>
-                <img draggable ="false" src="images/phoenix/phoenix_Curveball.png"></img>
-                <img draggable ="false" src="images/phoenix/phoenix_Hot_Hands.png"></img>
-                <img draggable ="false" src="images/phoenix/phoenix_Run_it_Back.png"></img>
-            </div>
-        </div>
-
-        <div class="agentscreen" id="raze" onmousemove="Parallax(event)">
-            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
-            <div class="role_navbar">
-                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
-                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
-                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
-                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
-            </div>
-            <h1 class="agentname" style="--desiredfontsize: 95vh">RAZE</h1>
-            <img class = "agentimg" src="images/raze/raze.png"></img>
-            <h1 class="agent_fullname"">Tayane Alves</h1>
-            <h1 class="agentdescription">Raze has a personality reflecting her explosive and colorful playstyle, bringing happiness and positivity to the team. She often cracks bad jokes and lifts the team's spirit, all while obliterating the enemy with her kit.</h1>
-    
-            <div class="agentselect">
-                <img draggable ="false" src ="images/raze/Boom_Bot.webp"></img>
-                <img draggable ="false" src="images/raze/Blast_Pack.webp"></img>
-                <img draggable ="false" src="images/raze/Paint_Shells.webp"></img>
-                <img draggable ="false" src="images/raze/Showstopper.webp"></img>
-            </div>
-        </div>
-
-        <div class="agentscreen" id="reyna" onmousemove="Parallax(event)">
-            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
-            <div class="role_navbar">
-                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
-                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
-                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
-                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
-            </div>
-            <h1 class="agentname" style="--desiredfontsize: 80vh">REYNA</h1>
-            <img class = "agentimg" src="images/reyna/reyna.png"></img>
-            <h1 class="agent_fullname"">Zyanya Mondragón</h1>
-            <h1 class="agentdescription">Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.</h1>
-    
-            <div class="agentselect">
-                <img draggable ="false" src ="images/reyna/Leer.webp"></img>
-                <img draggable ="false" src="images/reyna/Devour.webp"></img>
-                <img draggable ="false" src="images/reyna/Dismiss.webp"></img>
-                <img draggable ="false" src="images/reyna/Empress.webp"></img>
-            </div>
-        </div>
-
-        <div class="agentscreen" id="yoru" onmousemove="Parallax(event)">
-            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
-            <div class="role_navbar">
-                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
-                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
-                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
-                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
-            </div>
-            <h1 class="agentname" style="--desiredfontsize: 90vh">YORU</h1>
-            <img class = "agentimg" src="images/yoru/yoru.png"></img>
-            <h1 class="agent_fullname">Kiritani Ryo</h1>
-            <h1 class="agentdescription">Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. 
-                She runs circles around every skirmish, cutting enemies before they even know what hit them.</h1>
-    
-            <div class="agentselect">
-                <img draggable ="false" src ="images/jett/jett_Cloudburst.png"></img>
-                <img draggable ="false" src="images/jett/jett_Updraft.png"></img>
-                <img draggable ="false" src="images/jett/jett_Tailwind.png"></img>
-                <img draggable ="false" src="images/jett/jett_Bladestorm.png"></img>
-            </div>
-        </div>
-
-        <div class="agentscreen" id="neon" onmousemove="Parallax(event)">
-            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
-            <div class="role_navbar">
-                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
-                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
-                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
-                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
-            </div>
-            <h1 class="agentname" style="--desiredfontsize: 90vh">NEON</h1>
-            <img class = "agentimg" src="images/neon/neon.webp"></img>
-            <h1 class="agent_fullname" id = "test">Han Sunwoo</h1>
-            <h1 class="agentdescription">Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. 
-                She runs circles around every skirmish, cutting enemies before they even know what hit them.</h1>
-    
-            <div class="agentselect">
-                <img draggable ="false" src ="images/jett/jett_Cloudburst.png"></img>
-                <img draggable ="false" src="images/jett/jett_Updraft.png"></img>
-                <img draggable ="false" src="images/jett/jett_Tailwind.png"></img>
-                <img draggable ="false" src="images/jett/jett_Bladestorm.png"></img>
-            </div>
-        </div>
-
-        <div class="agentscreen" id="iso" onmousemove="Parallax(event)">
-            <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
-            <div class="role_navbar">
-                <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
-                <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
-                <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
-                <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
-            </div>
-            <h1 class="agentname" style="--desiredfontsize: 90vh">ISO</h1>
-            <img class = "agentimg" src="images/iso/iso.png"></img>
-            <h1 class="agent_fullname" id = "test">Han Sunwoo</h1>
-            <h1 class="agentdescription">Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. 
-                She runs circles around every skirmish, cutting enemies before they even know what hit them.</h1>
-    
-            <div class="agentselect">
-                <img draggable ="false" src ="images/jett/jett_Cloudburst.png"></img>
-                <img draggable ="false" src="images/jett/jett_Updraft.png"></img>
-                <img draggable ="false" src="images/jett/jett_Tailwind.png"></img>
-                <img draggable ="false" src="images/jett/jett_Bladestorm.png"></img>
-            </div>
-        </div>
-
+        <character id="Jett" ></character>
+        <character id="Phoenix" ></character>
+        <character id="Raze" ></character>
+        <character id="Reyna" ></character>
+        <character id="Yoru" ></character>
+        <character id="Neon" ></character>
+        <character id="Iso" ></character>
     </div>
-    
 
+    <script src="node_modules/riot/riot.min.js"></script>
 
+    <!-- mount -->
+    <script type="module">
+        // import the component JavaScript output generated via @riotjs/compiler
+        import character from '/character.js'
+
+        // register the riot component
+        riot.register('character', character)
+
+        riot.mount('#Jett', { name: "JETT", namesize: "100",
+            bgfromcol: "119,212,228", bgtocol: "67,86,128",
+            charimg_url: "images/jett/jett.png", charsize: "82", charloffset: "25", charboffset: "0",
+            fullname: "Han Sunwoo",
+            chardesc: "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can.  She runs circles around every skirmish, cutting enemies before they even know what hit them.",
+            abilities: [
+                {imgurl : "/images/jett/jett_Cloudburst.png"},
+                {imgurl : "images/jett/jett_Updraft.png"},
+                {imgurl : "images/jett/jett_Tailwind.png"},
+                {imgurl : "images/jett/jett_Bladestorm.png"}
+            ]
+        })
+
+        riot.mount('#Phoenix', { name: "PHOENIX", namesize: "65",
+            bgfromcol: "234,113,52", bgtocol: "189,67,30",
+            charimg_url: "images/phoenix/phoenix.png", charsize: "130", charloffset: "7", charboffset: "-300",
+            fullname: "Jamie Adeyemi",
+            chardesc: "A UK radiant of fire whose pride comes with ease, Phoenix throws himself into the fray turning the battlefield into his personal playground.",
+            abilities: [
+                {imgurl : "images/phoenix/phoenix_Blaze.png"},
+                {imgurl : "images/phoenix/phoenix_Curveball.png"},
+                {imgurl : "images/phoenix/phoenix_Hot_Hands.png"},
+                {imgurl : "images/phoenix/phoenix_Run_it_Back.png"}
+            ]
+        })
+
+        riot.mount('#Raze', { name: "RAZE", namesize: "95",
+            bgfromcol: "254,197,77", bgtocol: "132,89,75",
+            charimg_url: "images/raze/raze.png", charsize: "120", charloffset: "22", charboffset: "-290",
+            fullname: "Tayane Alves",
+            chardesc: "Raze has a personality reflecting her explosive and colorful playstyle, bringing happiness and positivity to the team. She often cracks bad jokes and lifts the team's spirit, all while obliterating the enemy with her kit.",
+            abilities: [
+                {imgurl : "images/raze/Boom_Bot.webp"},
+                {imgurl : "images/raze/Blast_Pack.webp"},
+                {imgurl : "images/raze/Paint_Shells.webp"},
+                {imgurl : "images/raze/Showstopper.webp"}
+            ]
+        })
+
+        riot.mount('#Reyna', { name: "REYNA", namesize: "80",
+            bgfromcol: "254,102,240", bgtocol: "152,53,134",
+            charimg_url: "images/reyna/reyna.png", charsize: "120", charloffset: "9", charboffset: "-240",
+            fullname: "Zyanya Mondragón",
+            chardesc: "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.",
+            abilities: [
+                {imgurl : "images/reyna/Leer.webp"},
+                {imgurl : "images/reyna/Devour.webp"},
+                {imgurl : "images/reyna/Dismiss.webp"},
+                {imgurl : "images/reyna/Empress.webp"}
+            ]
+        })
+
+        riot.mount('#Yoru', { name: "YORU", namesize: "90",
+            bgfromcol: "74,96,182", bgtocol: "57,56,109",
+            charimg_url: "images/yoru/yoru.png", charsize: "110", charloffset: "25", charboffset: "-260",
+            fullname: "Kiritani Ryo",
+            chardesc: "Japanese native Yoru rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.",
+            abilities: [
+                {imgurl : "images/yoru/Fakeout.webp"},
+                {imgurl : "images/yoru/Blindside.webp"},
+                {imgurl : "images/yoru/Gatecrash.webp"},
+                {imgurl : "images/yoru/Dimensional_Drift.webp"}
+            ]
+        })
+
+        riot.mount('#Neon', { name: "NEON", namesize: "90",
+            bgfromcol: "154,222,255", bgtocol: "86,88,255",
+            charimg_url: "images/neon/neon.webp", charsize: "120", charloffset: "8", charboffset: "-260",
+            fullname: "Tala Nicole Dimaapi Valdez",
+            chardesc: "Filipino Agent, Neon, surges forward at shocking speeds, discharging bursts of bioelectric radiance as fast as her body generates it. She races ahead to catch enemies off guard, then strikes them down quicker than lightning.",
+            abilities: [
+                {imgurl : "images/neon/Fast_Lane.webp"},
+                {imgurl : "images/neon/Relay_Bolt.webp"},
+                {imgurl : "images/neon/High_Gear.webp"},
+                {imgurl : "images/neon/Overdrive.webp"}
+            ]
+        })
+
+        riot.mount('#Iso', { name: "ISO", namesize: "90",
+            bgfromcol: "177,129,255", bgtocol: "109,51,180",
+            charimg_url: "images/iso/iso.png", charsize: "125", charloffset: "13", charboffset: "-310",
+            fullname: "Li Zhao Yu",
+            chardesc: "Chinese fixer for hire Iso goes into a flow state to dismantle the opposition. Reconfiguring ambient energy into bulletproof protection, he advances with focus towards his next duel to the death.",
+            abilities: [
+                {imgurl : "images/iso/Contingency.webp"},
+                {imgurl : "images/iso/Undercut.webp"},
+                {imgurl : "images/iso/Double_Tap.webp"},
+                {imgurl : "images/iso/Kill_Contract.webp"}
+            ]
+        })
+
+        riot.mount('#Viper', { name: "VIPER", namesize: "80",
+            bgfromcol: "0,180,65", bgtocol: "39,75,53",
+            charimg_url: "images/iso/iso.png", charsize: "120", charloffset: "22", charboffset: "-290",
+            fullname: "Tayane Alves",
+            chardesc: "",
+            abilities: [
+                {imgurl : "images/iso/Contingency.webp"},
+                {imgurl : "images/iso/Undercut.webp"},
+                {imgurl : "images/iso/Double_Tap.webp"},
+                {imgurl : "images/iso/Kill_Contract.webp"}
+            ]
+        })
+    </script>
 
 </body>
 </html>

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "riot": "^9.1.6",
     "unpkg": "^0.2.0"
   }
 }

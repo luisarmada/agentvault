@@ -1,36 +1,35 @@
+const _nameParallaxValue = 2;
 
+window.onload = function (){
+    Parallax(window.innerWidth/2, window.innerHeight/2);
+};
 
-function Parallax(e){
-    let x = e.clientX;
-    let y = e.clientY;
-    
-    const agentnames = document.getElementsByClassName("agentname");
-    const valA = 2;
+function Parallax(x, y){
     const test = document.getElementById("test");
-    //test.innerHTML = agentnames[0].style.transform;
-    const px = ((window.innerWidth - x)* valA) / 90;
-    const py = ((window.innerHeight - y) * valA) / 90;
-    tet = px;
+
+    const agentnames = document.getElementsByClassName("agentname");
+    const nameMove = CalculateParallaxMove(x, y, _nameParallaxValue);
     for(let i = 0; i < agentnames.length; i++){
-        agentnames[i].style.transform = `translateX(${px}px) translateY(${py}px)`;
+        agentnames[i].style.transform = `translateX(${nameMove[0]}px) translateY(${nameMove[1]}px)`;
     }
     
     // IMAGES
     const agentimgs = document.getElementsByClassName("agentimg");
-    const val = 8;
-    const tx = -(window.innerHeight * 0.5) + ((window.innerWidth - x)* val) / 90;
-    const ty = ((window.innerHeight - y) * val) / 90;
+    const imgMove = CalculateParallaxMove(x, y, 8);
     for(let i = 0; i < agentimgs.length; i++){
-        //test.innerHTML = Window.getComputedStyle(agentimgs[i]).getPropertyValue("transform");
-        agentimgs[i].style.transform = `translateX(${tx}px) translateY(${ty}px)`;
+        agentimgs[i].style.transform = `translateX(${imgMove[0]}px) translateY(${imgMove[1]}px)`;
     }
 }
 
-function getTranslateXY(element) {
-    const style = window.getComputedStyle(element)
-    const matrix = new DOMMatrixReadOnly(style.transform)
-    return {
-        translateX: matrix.m41,
-        translateY: matrix.m42
-    }
+function CalculateParallaxMove(x, y, value) {
+    const smoothing = value / 90;
+    const px = (window.innerWidth - x) * smoothing;
+    const py = (window.innerHeight - y) * smoothing;
+    return [px, py];
+}
+
+function MouseMoveEvent(e) {
+    let x = e.clientX;
+    let y = e.clientY;
+    Parallax(x, y);
 }

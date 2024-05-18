@@ -1,0 +1,32 @@
+<character>
+    <div class="agentscreen" id={ props.name } style="--fromcol: {props.bgfromcol}; --tocol: {props.bgtocol}" onmousemove="MouseMoveEvent(event)">
+
+        <img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class = "gamelogo"></img>
+        <div class="role_navbar">
+            <img src="images/DuelistClassSymbol.webp" class="curr_role"></img>
+            <img src="images/InitiatorsClassSymbol.webp" class="other_role"></img>
+            <img src="images/SentinelClassSymbol.webp" class="other_role"></img>
+            <img src="images/ControllerClassSymbol.webp" class="other_role"></img>
+        </div>
+
+        <h1 class="agentname" style="--desiredfontsize: {props.namesize}vh">{ props.name }</h1>
+        <img class = "agentimg" src={ props.charimg_url } style="--size: {props.charsize}%; --leftoffset: {props.charloffset}%; --bottomoffset: {props.charboffset}px;"></img>
+        <h1 class="agent_fullname" id = "test">{ props.fullname }</h1>
+        <h1 class="agentdescription">{ props.chardesc }</h1>
+
+        <div class="agentselect">
+            <img draggable="false" each={ ability in state.abilities } src={ability.imgurl} />
+        </div>
+    </div>
+
+    <script>
+        export default {
+            onBeforeMount(props, state) {
+                this.state = {
+                    abilities: props.abilities
+                }
+            }
+        }
+    </script>
+
+</character>
