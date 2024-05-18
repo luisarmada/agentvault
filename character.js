@@ -7,7 +7,7 @@ var character = {
       };
     }
   },
-  template: (template, expressionTypes, bindingTypes, getComponent) => template('<div expr0="expr0" class="agentscreen" onmousemove="MouseMoveEvent(event)"><img src="images/valorant-logo-valorant-icon-transparent-free-png.png" class="gamelogo"/><div class="role_navbar"><img src="images/DuelistClassSymbol.webp" class="curr_role"/><img src="images/InitiatorsClassSymbol.webp" class="other_role"/><img src="images/SentinelClassSymbol.webp" class="other_role"/><img src="images/ControllerClassSymbol.webp" class="other_role"/></div><h1 expr1="expr1" class="agentname"> </h1><img expr2="expr2" class="agentimg"/><h1 expr3="expr3" class="agent_fullname" id="test"> </h1><h1 expr4="expr4" class="agentdescription"> </h1><div class="agentselect"><img expr5="expr5" draggable="false"/></div></div>', [{
+  template: (template, expressionTypes, bindingTypes, getComponent) => template('<div expr0="expr0" class="agentscreen" onmousemove="MouseMoveEvent(event)"><h1 expr1="expr1" class="agentname"> </h1><img expr2="expr2" class="agentimg"/><h1 expr3="expr3" class="agent_fullname" id="test"> </h1><h1 expr4="expr4" class="agentdescription"> </h1><div class="agentselect"><img expr5="expr5" draggable="false"/></div></div>', [{
     redundantAttribute: 'expr0',
     selector: '[expr0]',
     expressions: [{
@@ -41,7 +41,7 @@ var character = {
       type: expressionTypes.ATTRIBUTE,
       isBoolean: false,
       name: 'src',
-      evaluate: _scope => _scope.props.charimg_url
+      evaluate: _scope => [_scope.props.img_fpath, _scope.props.charimg_url].join('')
     }, {
       type: expressionTypes.ATTRIBUTE,
       isBoolean: false,
@@ -73,7 +73,7 @@ var character = {
         type: expressionTypes.ATTRIBUTE,
         isBoolean: false,
         name: 'src',
-        evaluate: _scope => _scope.ability.imgurl
+        evaluate: _scope => [_scope.props.img_fpath, _scope.ability.imgurl].join('')
       }]
     }]),
     redundantAttribute: 'expr5',

@@ -1,0 +1,16 @@
+<rolenav>
+    <img src={ props.logopath } class = "gamelogo"></img>
+    <div class="role_navbar">
+        <img each={ role in state.roles} src={role.roleimg} class={role.curr ? 'curr_role' : 'other_role'}></img>
+    </div>
+
+    <script>
+        export default {
+            onBeforeMount(props, state) {
+                this.state = {
+                    roles: props.roles
+                }
+            }
+        }
+    </script>
+</rolenav>
