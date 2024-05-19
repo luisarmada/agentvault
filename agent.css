@@ -182,17 +182,13 @@ body{
 }*/
 
 .agentimg{
-    
-    margin: auto;
-    text-align:center;
-    pointer-events: none;
-
-    width: auto;
-    border: 2px solid black;
-    height: var(--size);
     position: absolute;
+    pointer-events: none;
+    width: auto;
+    height: var(--size);
     left: var(--leftoffset);
-    transform: translate(var(--leftoffset) * -1, var(--bottomoffset) * -1);
+    right: 0;
+    margin: auto;
     bottom: var(--bottomoffset);
 }
 

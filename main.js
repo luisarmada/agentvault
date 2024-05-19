@@ -42,7 +42,7 @@ function Parallax(x, y){
 
 function CalculateParallaxMove(x, y, value) {
     const smoothing = value / 90;
-    const px = (window.innerWidth - x) * smoothing;
+    const px = ((0.5 * window.innerWidth)- x) * smoothing;
     const py = (window.innerHeight - y) * smoothing;
     return [px, py];
 }
