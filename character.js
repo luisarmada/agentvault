@@ -46,7 +46,7 @@ var character = {
       type: expressionTypes.ATTRIBUTE,
       isBoolean: false,
       name: 'style',
-      evaluate: _scope => ['--size: ', _scope.props.charsize, '%; --leftoffset: ', _scope.props.charloffset, '%; --bottomoffset: ', _scope.props.charboffset, 'px;'].join('')
+      evaluate: _scope => ['--size: ', _scope.props.charsize, '%; --leftoffset: ', _scope.props.charloffset, '%; --bottomoffset: ', _scope.props.charboffset, '%;'].join('')
     }]
   }, {
     redundantAttribute: 'expr3',

@@ -66,7 +66,7 @@ riot.mount('#Jett', { name: "JETT", namesize: "100",
 riot.mount('#Phoenix', { name: "PHOENIX", namesize: "65",
     bgfromcol: "234,113,52", bgtocol: "189,67,30",
     img_fpath: "images/valorant/phoenix/",
-    charimg_url: "phoenix.png", charsize: "130", charloffset: "7", charboffset: "-300",
+    charimg_url: "phoenix.png", charsize: "130", charloffset: "7", charboffset: "-35",
     fullname: "Jamie Adeyemi",
     chardesc: "A UK radiant of fire whose pride comes with ease, Phoenix throws himself into the fray turning the battlefield into his personal playground.",
     abilities: [
