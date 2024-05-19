@@ -72,3 +72,7 @@ function myFunction(evt) {
     prevScreen = currentMainScreen;
     currentMainScreen = target_screen;
 };
+
+function switchToTargetScreen(target_screen) {
+
+}
