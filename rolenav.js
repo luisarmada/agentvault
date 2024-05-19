@@ -30,7 +30,11 @@ var rolenav = {
         type: expressionTypes.ATTRIBUTE,
         isBoolean: false,
         name: 'class',
-        evaluate: _scope => _scope.role.curr ? 'curr_role' : 'other_role'
+        evaluate: _scope => [_scope.role.name, _scope.role.curr ? ' curr_role' : ' other_role'].join('')
+      }, {
+        type: expressionTypes.EVENT,
+        name: 'onclick',
+        evaluate: _scope => _scope.myFunction2
       }]
     }]),
     redundantAttribute: 'expr1',

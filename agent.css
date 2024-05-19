@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Tungsten-Bold";
-    src: url('fonts/Tungsten-Bold.ttf');
+    src: url('fonts/mf-bold.ttf');
 }
 @font-face {
 	font-family: 'proxima_nova_rgbold';
@@ -34,8 +34,8 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: white;
     overflow: hidden;
-    background-color: black;
 }
 
 
@@ -119,13 +119,44 @@ body{
     width: 50px;
     height: 50px;
     opacity: 0.7;
-    z-index: 99;
+    z-index: 80;
 }
 
-.transitionscreen {
+.main_screen {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    z-index: 99;
+    margin-top: calc(var(--pageorder) * -100vh);
+    z-index: 90;
+    
+    /*animation-name: animate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;*/
+}
+
+#selectionscreen{
+    display: grid;
+    grid-template: 1fr/ 1fr;
+    margin: 0 auto;
+}
+
+#selectionscreen > * {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.current_screen{
+    animation-name: animate;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes animate {
+    from {
+        top:100vh;
+    }
+    to {
+        top: 0;
+    }
 }
 
 .agentdescription{
@@ -187,3 +218,4 @@ body{
 .agentselect img:hover{
     opacity: 0.9;
 }
+

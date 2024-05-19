@@ -1,7 +1,26 @@
 const _nameParallaxValue = 2;
 
+var currentMainScreen;
+var currentMainScreenName;
+var prevScreen;
+
+const roletags = ["duelists", "initiators", "sentinels", "controllers"];
+
 window.onload = function (){
     Parallax(window.innerWidth/2, window.innerHeight/2);
+
+    currentMainScreenName = roletags[0]
+    currentMainScreen = document.getElementById(currentMainScreenName + "_screen");
+
+    for(let s = 0; s < roletags.length; s++){
+        var rolebuttons = document.getElementsByClassName(roletags[s]);
+        for(var i = 0; i < rolebuttons.length; i++) {
+            rolebuttons[i].tag = roletags[s];
+            rolebuttons[i].pageorder = s;
+            rolebuttons[i].addEventListener('click', myFunction, false);
+        }
+    }   
+    
 };
 
 function Parallax(x, y){
@@ -33,3 +52,23 @@ function MouseMoveEvent(e) {
     let y = e.clientY;
     Parallax(x, y);
 }
+
+function myFunction(evt) {
+    let roletag = evt.currentTarget.tag + "_screen";
+    let target_screen = document.getElementById(roletag);
+
+    if(target_screen == currentMainScreen) return;
+    
+    target_screen.classList.add("current_screen");
+    currentMainScreen.classList.remove("current_screen"); 
+    
+    
+    target_screen.setAttribute("style", "z-index: 100");
+    currentMainScreen.setAttribute("style", "z-index: 99");
+    if(prevScreen != null && target_screen != prevScreen){
+        prevScreen.setAttribute("style", "z-index: 0");
+    }
+   
+    prevScreen = currentMainScreen;
+    currentMainScreen = target_screen;
+};
