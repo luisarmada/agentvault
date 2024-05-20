@@ -160,3 +160,231 @@ riot.mount('#Viper', { name: "VIPER", namesize: "80",
         {imgurl : "Viper's_Pit.webp"}
     ]
 })
+
+riot.mount('#Brimstone', { name: "BRIMSTONE", namesize: "52",
+    bgfromcol: "240,138,51", bgtocol: "61,16,6",
+    img_fpath: "images/valorant/brimstone/",
+    charimg_url: "Brimstone_Artwork_Full.webp", charsize: "120", charloffset: "-2", charboffset: "-28",
+    fullname: "Liam Byrne",
+    chardesc: "Joining from the U.S.A., Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.",
+    abilities: [
+        {imgurl : "Stim_Beacon.webp"},
+        {imgurl : "Incendiary2.webp"},
+        {imgurl : "Sky_Smoke3.webp"},
+        {imgurl : "Orbital_Strike4.webp"}
+    ]
+})
+
+riot.mount('#Omen', { name: "OMEN", namesize: "90",
+    bgfromcol: "49,91,185", bgtocol: "64,58,86",
+    img_fpath: "images/valorant/omen/",
+    charimg_url: "Omen_Artwork_Full.webp", charsize: "120", charloffset: "3", charboffset: "-28",
+    fullname: "???",
+    chardesc: "A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.",
+    abilities: [
+        {imgurl : "Shrouded_Step.webp"},
+        {imgurl : "Paranoia2.webp"},
+        {imgurl : "Dark_Cover3.webp"},
+        {imgurl : "From_the_Shadows4.webp"}
+    ]
+})
+
+riot.mount('#Astra', { name: "ASTRA", namesize: "80",
+    bgfromcol: "203,51,178", bgtocol: "112,19,228",
+    img_fpath: "images/valorant/astra/",
+    charimg_url: "Astra_Artwork_Full.webp", charsize: "120", charloffset: "8", charboffset: "-28",
+    fullname: "Efia Danso",
+    chardesc: "Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she’s always eons ahead of her enemy’s next move.",
+    abilities: [
+        {imgurl : "Gravity_Well.webp"},
+        {imgurl : "Nova_Pulse2.webp"},
+        {imgurl : "Nebula_-_Dissipate3.webp"},
+        {imgurl : "Cosmic_Divide4.webp"}
+    ]
+})
+
+riot.mount('#Harbor', { name: "HARBOR", namesize: "70",
+    bgfromcol: "118,221,208", bgtocol: "50,90,77",
+    img_fpath: "images/valorant/harbor/",
+    charimg_url: "Harbor_Artwork_Full.webp", charsize: "120", charloffset: "-2", charboffset: "-28",
+    fullname: "Varun Batra",
+    chardesc: "Hailing from India's coast, Harbor storms the field wielding ancient technology with dominion over water. He unleashes frothing rapids and crushing waves to shield his allies, or pummel those that oppose him.",
+    abilities: [
+        {imgurl : "Cascade.webp"},
+        {imgurl : "Cove2.webp"},
+        {imgurl : "High_Tide3.webp"},
+        {imgurl : "Reckoning4.webp"}
+    ]
+})
+
+riot.mount('#Clove', { name: "CLOVE", namesize: "80",
+    bgfromcol: "177,129,255", bgtocol: "109,51,180",
+    img_fpath: "images/valorant/clove/",
+    charimg_url: "Clove_Artwork_Full.webp", charsize: "120", charloffset: "-2", charboffset: "-28",
+    fullname: "UNKNOWN",
+    chardesc: "Scottish troublemaker Clove makes mischief for enemies in both the heat of combat and the cold of death. The young immortal keeps foes guessing, even from beyond the grave, their return to the living only ever a moment away.",
+    abilities: [
+        {imgurl : "Pick-me-up.webp"},
+        {imgurl : "Meddle2.webp"},
+        {imgurl : "Ruse3.webp"},
+        {imgurl : "Not_Dead_Yet4.webp"}
+    ]
+})
+
+// ---------------------- INITIATORS -----------------------------
+
+riot.mount('#Sova', { name: "SOVA", namesize: "95",
+    bgfromcol: "56,179,221", bgtocol: "16,37,92",
+    img_fpath: "images/valorant/sova/",
+    charimg_url: "Sova_Artwork_Full.webp", charsize: "120", charloffset: "-2", charboffset: "-28",
+    fullname: "Alexander (Sasha) Novikov",
+    chardesc: "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.",
+    abilities: [
+        {imgurl : "Owl_Drone.webp"},
+        {imgurl : "Shock_Bolt2.webp"},
+        {imgurl : "Recon_Bolt3.webp"},
+        {imgurl : "Hunter's_Fury4.webp"}
+    ]
+})
+
+riot.mount('#Breach', { name: "BREACH", namesize: "69",
+    bgfromcol: "255,246,130", bgtocol: "108,51,24",
+    img_fpath: "images/valorant/breach/",
+    charimg_url: "Breach_Artwork_Full.webp", charsize: "120", charloffset: "0", charboffset: "-28",
+    fullname: "Erik Torsten",
+    chardesc: "Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.",
+    abilities: [
+        {imgurl : "Aftershock.webp"},
+        {imgurl : "Flashpoint2.webp"},
+        {imgurl : "Fault_Line3.webp"},
+        {imgurl : "Rolling_Thunder4.webp"}
+    ]
+})
+
+riot.mount('#Skye', { name: "SKYE", namesize: "95",
+    bgfromcol: "57,216,166", bgtocol: "79,58,57",
+    img_fpath: "images/valorant/skye/",
+    charimg_url: "Skye_Artwork_Full.webp", charsize: "120", charloffset: "4", charboffset: "-28",
+    fullname: "Kirra Foster",
+    chardesc: "Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye's side.",
+    abilities: [
+        {imgurl : "Regrowth.webp"},
+        {imgurl : "Trailblazer2.webp"},
+        {imgurl : "Guiding_Light3.webp"},
+        {imgurl : "Seekers4.webp"}
+    ]
+})
+
+riot.mount('#KAYO', { name: "KAY/O", namesize: "80",
+    bgfromcol: "163,234,255", bgtocol: "34,44,52",
+    img_fpath: "images/valorant/kayo/",
+    charimg_url: "KAYO_Artwork_Full.webp", charsize: "120", charloffset: "3", charboffset: "-28",
+    fullname: "GRENADIER",
+    chardesc: "KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to suppress enemy abilities dismantles his opponents' capacity to fight back, securing him and his allies the ultimate edge.",
+    abilities: [
+        {imgurl : "FRAG-ment.webp"},
+        {imgurl : "FLASH-drive2.webp"},
+        {imgurl : "ZERO-point3.webp"},
+        {imgurl : "NULL-cmd4.webp"}
+    ]
+})
+
+riot.mount('#Fade', { name: "FADE", namesize: "100",
+    bgfromcol: "168,60,73", bgtocol: "45,61,89",
+    img_fpath: "images/valorant/fade/",
+    charimg_url: "Fade_Artwork_Full.webp", charsize: "125", charloffset: "-2", charboffset: "-30",
+    fullname: "Hazal Eyletmez",
+    chardesc: "Turkish bounty hunter Fade unleashes the power of raw nightmare to seize enemy secrets. Attuned with terror itself, she hunts down targets and reveals their deepest fears - before crushing them in the dark.",
+    abilities: [
+        {imgurl : "Prowler.webp"},
+        {imgurl : "Seize2.webp"},
+        {imgurl : "Haunt3.webp"},
+        {imgurl : "Nightfall4.webp"}
+    ]
+})
+
+riot.mount('#Gekko', { name: "GEKKO", namesize: "85",
+    bgfromcol: "154,222,255", bgtocol: "86,88,255",
+    img_fpath: "images/valorant/gekko/",
+    charimg_url: "Gekko_Artwork_Full.webp", charsize: "105", charloffset: "-2", charboffset: "-28",
+    fullname: "Mateo Armendáriz De la Fuente",
+    chardesc: "Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.",
+    abilities: [
+        {imgurl : "Mosh_Pit.webp"},
+        {imgurl : "Wingman2.webp"},
+        {imgurl : "Dizzy3.webp"},
+        {imgurl : "Thrash4.webp"}
+    ]
+})
+
+// --------------------- SENTINELS ---------------------------
+
+riot.mount('#Sage', { name: "SAGE", namesize: "95",
+    bgfromcol: "59,224,195", bgtocol: "56,100,107",
+    img_fpath: "images/valorant/sage/",
+    charimg_url: "Sage_Artwork_Full.webp", charsize: "120", charloffset: "3", charboffset: "-28",
+    fullname: "Wei Ling Ying",
+    chardesc: "The bastion of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.",
+    abilities: [
+        {imgurl : "Barrier_Orb.webp"},
+        {imgurl : "Slow_Orb2.webp"},
+        {imgurl : "Healing_Orb3.webp"},
+        {imgurl : "Resurrection4.webp"}
+    ]
+})
+
+riot.mount('#Cypher', { name: "CYPHER", namesize: "70",
+    bgfromcol: "185,185,185", bgtocol: "19,19,25",
+    img_fpath: "images/valorant/cypher/",
+    charimg_url: "Cypher_Artwork_Full.webp", charsize: "120", charloffset: "2", charboffset: "-28",
+    fullname: "Amir El Amari",
+    chardesc: "The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy’s every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.",
+    abilities: [
+        {imgurl : "Trapwire.webp"},
+        {imgurl : "Cyber_Cage2.webp"},
+        {imgurl : "Spycam3.webp"},
+        {imgurl : "Neural_Theft4.webp"}
+    ]
+})
+
+riot.mount('#Killjoy', { name: "KILLJOY", namesize: "70",
+    bgfromcol: "250,220,49", bgtocol: "52,49,43",
+    img_fpath: "images/valorant/killjoy/",
+    charimg_url: "Killjoy_Artwork_Full.webp", charsize: "120", charloffset: "0", charboffset: "-28",
+    fullname: "Klara Böhringer",
+    chardesc: "The genius of Germany, Killjoy effortlessly secures key battlefield positions with her arsenal of inventions. If their damage doesn't take her enemies out, the debuff her robots provide will make short work of them.",
+    abilities: [
+        {imgurl : "Nanoswarm.webp"},
+        {imgurl : "Alarmbot2.webp"},
+        {imgurl : "Turret3.webp"},
+        {imgurl : "Lockdown4.webp"}
+    ]
+})
+
+riot.mount('#Chamber', { name: "CHAMBER", namesize: "55",
+    bgfromcol: "201,61,123", bgtocol: "124,46,113",
+    img_fpath: "images/valorant/chamber/",
+    charimg_url: "Chamber_Artwork_Full.webp", charsize: "120", charloffset: "0", charboffset: "-28",
+    fullname: "Vincent Fabron",
+    chardesc: "Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.",
+    abilities: [
+        {imgurl : "Trademark.webp"},
+        {imgurl : "Headhunter2.webp"},
+        {imgurl : "Rendezvous3.webp"},
+        {imgurl : "Tour_De_Force4.webp"}
+    ]
+})
+
+riot.mount('#Deadlock', { name: "DEADLOCK", namesize: "55",
+    bgfromcol: "185,185,185", bgtocol: "19,19,25",
+    img_fpath: "images/valorant/deadlock/",
+    charimg_url: "Deadlock_Artwork_Full.webp", charsize: "120", charloffset: "1", charboffset: "-28",
+    fullname: "Iselin",
+    chardesc: "Norwegian operative Deadlock deploys an array of cutting-edge nanowire to secure the battlefield from even the most lethal assault. No one escapes her vigilant watch, nor survives her unyielding ferocity.",
+    abilities: [
+        {imgurl : "GravNet.webp"},
+        {imgurl : "Sonic_Sensor2.webp"},
+        {imgurl : "Barrier_Mesh3.webp"},
+        {imgurl : "Annihilation4.webp"}
+    ]
+})
