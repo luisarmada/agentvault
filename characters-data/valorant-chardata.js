@@ -161,7 +161,7 @@ riot.mount('#Viper', { name: "VIPER", namesize: "80",
     ]
 })
 
-riot.mount('#Brimstone', { name: "BRIMSTONE", namesize: "52",
+riot.mount('#Brimstone', { name: "BRIMSTONE", namesize: "47",
     bgfromcol: "240,138,51", bgtocol: "61,16,6",
     img_fpath: "images/valorant/brimstone/",
     charimg_url: "Brimstone_Artwork_Full.webp", charsize: "120", charloffset: "-2", charboffset: "-28",
@@ -218,7 +218,7 @@ riot.mount('#Harbor', { name: "HARBOR", namesize: "70",
 })
 
 riot.mount('#Clove', { name: "CLOVE", namesize: "80",
-    bgfromcol: "177,129,255", bgtocol: "109,51,180",
+    bgfromcol: "250,220,49", bgtocol: "225,136,252",
     img_fpath: "images/valorant/clove/",
     charimg_url: "Clove_Artwork_Full.webp", charsize: "120", charloffset: "-2", charboffset: "-28",
     fullname: "UNKNOWN",
@@ -276,7 +276,7 @@ riot.mount('#Skye', { name: "SKYE", namesize: "95",
 })
 
 riot.mount('#KAYO', { name: "KAY/O", namesize: "80",
-    bgfromcol: "163,234,255", bgtocol: "34,44,52",
+    bgfromcol: "110,149,169", bgtocol: "34,44,52",
     img_fpath: "images/valorant/kayo/",
     charimg_url: "KAYO_Artwork_Full.webp", charsize: "120", charloffset: "3", charboffset: "-28",
     fullname: "GRENADIER",
@@ -304,7 +304,7 @@ riot.mount('#Fade', { name: "FADE", namesize: "100",
 })
 
 riot.mount('#Gekko', { name: "GEKKO", namesize: "85",
-    bgfromcol: "154,222,255", bgtocol: "86,88,255",
+    bgfromcol: "236,209,46", bgtocol: "100,186,158",
     img_fpath: "images/valorant/gekko/",
     charimg_url: "Gekko_Artwork_Full.webp", charsize: "105", charloffset: "-2", charboffset: "-28",
     fullname: "Mateo Armendáriz De la Fuente",
@@ -320,7 +320,7 @@ riot.mount('#Gekko', { name: "GEKKO", namesize: "85",
 // --------------------- SENTINELS ---------------------------
 
 riot.mount('#Sage', { name: "SAGE", namesize: "95",
-    bgfromcol: "59,224,195", bgtocol: "56,100,107",
+    bgfromcol: "59,224,195", bgtocol: "21,18,17",
     img_fpath: "images/valorant/sage/",
     charimg_url: "Sage_Artwork_Full.webp", charsize: "120", charloffset: "3", charboffset: "-28",
     fullname: "Wei Ling Ying",
@@ -348,7 +348,7 @@ riot.mount('#Cypher', { name: "CYPHER", namesize: "70",
 })
 
 riot.mount('#Killjoy', { name: "KILLJOY", namesize: "70",
-    bgfromcol: "250,220,49", bgtocol: "52,49,43",
+    bgfromcol: "250,220,49", bgtocol: "104,178,130",
     img_fpath: "images/valorant/killjoy/",
     charimg_url: "Killjoy_Artwork_Full.webp", charsize: "120", charloffset: "0", charboffset: "-28",
     fullname: "Klara Böhringer",
@@ -362,7 +362,7 @@ riot.mount('#Killjoy', { name: "KILLJOY", namesize: "70",
 })
 
 riot.mount('#Chamber', { name: "CHAMBER", namesize: "55",
-    bgfromcol: "201,61,123", bgtocol: "124,46,113",
+    bgfromcol: "255,215,0", bgtocol: "124,46,113",
     img_fpath: "images/valorant/chamber/",
     charimg_url: "Chamber_Artwork_Full.webp", charsize: "120", charloffset: "0", charboffset: "-28",
     fullname: "Vincent Fabron",
