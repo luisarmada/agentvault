@@ -52,7 +52,7 @@ riot.mount('#Jett', { name: "JETT", namesize: "100",
     bgfromcol: "119,212,228", bgtocol: "67,86,128",
     img_fpath: "images/valorant/jett/",
     role: "0",
-    charimg_url: "jett.png", charsize: "82", charloffset: "-5", charboffset: "0",
+    charimg_url: "jett.png", charsize: "82", charloffset: "-40", charboffset: "0",
     fullname: "Han Sunwoo",
     chardesc: "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can.  She runs circles around every skirmish, cutting enemies before they even know what hit them.",
     abilities: [
